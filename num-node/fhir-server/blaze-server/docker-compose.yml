@@ -8,7 +8,7 @@ services:
       JAVA_TOOL_OPTIONS: ${CODEX_FHIR_SERVER_JVM_ARGS:--Xmx4g}
       LOG_LEVEL: debug
     ports:
-    - ${PORT_BLAZE_FHIR:-127.0.0.1:8081}:8080
+    - ${PORT_BLAZE_FHIR:-127.0.0.1:8086}:8080
     volumes:
     - "blaze-data:/app/data"
 
